@@ -1,16 +1,92 @@
-# timer
+# Chess Timer
 
-A new Flutter project.
+A modern, feature-rich chess timer application built with Flutter. This app provides a sleek and intuitive interface for managing time controls in chess games.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+### Time Controls
+- Multiple preset time controls (1|0, 3|2, 5|0, etc.)
+- Custom time settings with increment support
+- Time display in minutes and seconds
+- Move counter for both players
 
-A few resources to get you started if this is your first Flutter project:
+### Game Controls
+- Start/Pause functionality
+- Reset game option
+- Player resignation
+- Settings access during game
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Visual Feedback
+- Active player highlighting
+- Low time warning with animation
+- Game over status display
+- Pause overlay
+- Rotated display for opposite player
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Audio & Haptic Feedback
+- Move confirmation sounds
+- Game over sound
+- Haptic feedback on moves
+- Low latency sound processing
+
+## Technical Details
+
+### Dependencies
+```yaml
+flutter:
+  sdk: flutter
+audioplayers: ^5.2.1
+```
+
+### Core Components
+- Stateful timer management
+- Custom animations for low time warning
+- Sound effect handling with AudioPlayer
+- Haptic feedback integration
+- Responsive layout design
+
+## Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/PrajolOG/chesstimer.git
+```
+
+2. Navigate to project directory:
+```bash
+cd chesstimer
+```
+
+3. Install dependencies:
+```bash
+flutter pub get
+```
+
+4. Run the app:
+```bash
+flutter run
+```
+
+## Usage
+
+1. **Select Time Control**
+   - Choose from preset time controls
+   - Or create custom time settings
+
+2. **During Game**
+   - Tap player's area to start/switch turns
+   - Use control bar for game management
+   - Monitor moves and remaining time
+
+3. **Game End**
+   - Automatic timeout detection
+   - Manual resignation option
+   - Clear winner indication
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
